@@ -1,0 +1,143 @@
+@import url("colors.css");
+@import url("../fonts/Nunito/Nunito-BlackItalic.ttf");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text);
+  
+}
+button {
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+}
+nav button {
+  box-shadow: none;
+  display: inline;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  font-size: 26px;
+
+}
+.content,
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.three{
+  grid-template-columns: 1fr 1fr 1fr [stop end];
+  text-align: center;
+}
+.four{
+  grid-template-columns: 1fr 1fr 1fr 1fr [stop end];
+  text-align: center;
+}
+.section-header{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+
+.content div, section div{
+  align-self: center;
+  justify-self: center;
+}
+
+header {
+  background-image: url("../img/hero-bg.png");
+}
+header h1 {
+  font-size: rem;
+  margin-bottom: 10px;
+}
+.text{
+  background-color: rgb(244, 255, 255);
+  padding: 30px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+section h1 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--cyanish);
+}
+
+section h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+section.first{
+  grid-template-rows: 450px;
+}
+
+a {
+  color: (--text);
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+}
+a:hover{
+  color: (--cyanish);
+}
+
+header, section{
+  padding: 0px 50px 0px 50px;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+button img{
+  width: 1em;
+  margin: 2px;
+}
+.second div:not(.section-header){
+  padding :15px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  height: 100%;
+}
+.second{
+  column-gap: 50px;
+}
+.second img{
+  width: 250px;
+ 
+}
+.first button{
+  margin-top: 25px;
+}
+section{
+  margin-top: 100px;
+}
+.third img{
+  height: 65px;
+  padding-right: 10px ;
+}
+.third b{
+  font-size: 2.5em;
+}
+.third > div{
+  display: flex;
+  text-align: left;
+  padding: 10px 50px 10px 50px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.082);
+}

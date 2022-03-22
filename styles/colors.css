@@ -1,0 +1,16 @@
+
+:root{
+--button-background: #4154f1;
+--who-are-we: #f6f9ff;
+--box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+--text: hsl(218, 98%, 22%);
+--text-2: #444444;
+
+/*Services:*/
+--cyanish:#2db6fa;
+--light-orange:#f68c09;
+--light-green:#08da4e;
+--redish:#e9222c;
+--puple-magenta:#b50edf;
+--pink:#f51f9c;
+}
