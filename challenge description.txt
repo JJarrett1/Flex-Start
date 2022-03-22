@@ -16,3 +16,5 @@ NB. Any icons not provided in assets can be acquired from either:
 - Font Awesome: https://fontawesome.com/
 - Iconscout: https://iconscout.com/
 A good Latin generator is: https://loremipsum.io/ 
+
+todo: fonts

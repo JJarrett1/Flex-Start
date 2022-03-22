@@ -1,5 +1,5 @@
 @import url("colors.css");
-@import url("../fonts/Nunito/Nunito-BlackItalic.ttf");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -86,6 +86,10 @@ section h2{
   font-size: 1.2rem;
   font-weight: bold;
 }
+.section-header h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 section.first{
   grid-template-rows: 450px;
 }
@@ -140,4 +144,200 @@ section{
   text-align: left;
   padding: 10px 50px 10px 50px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.082);
+}
+.featuresgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.featuresgrid div{
+  padding: 20px 30px 20px 30px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.082);
+  width: 100%;
+  height: 100%;
+}
+.clients{
+  display: block;
+}
+.clients div:not(.section-header){
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap:60px;
+}
+.clients div:not(.section-header) img{
+  opacity: 0.6;
+}
+
+
+.eighth{
+  gap: 10px;
+}
+.cyan a{
+  color: var(--cyanish);
+}
+.orange a{
+  color: var(--light-orange);
+}
+.green a{
+  color: var(--light-green);
+}
+.red a{
+  color: var(--redish);
+}
+.purple a{
+  color: var(--purple-magenta);
+}
+.pink a{
+  color: var(--pink);
+}
+.cyan {
+  border-bottom: 2px solid var(--cyanish);
+}
+.orange {
+  border-bottom: 2px solid var(--light-orange);
+}
+.green {
+  border-bottom: 2px solid  var(--light-green);
+}
+.red {
+  border-bottom: 2px solid var(--redish);
+}
+.purple {
+  border-bottom: 2px solid  var(--purple-magenta);
+}
+.pink {
+  border-bottom: 2px solid  var(--pink);
+}
+.cyan, .orange, .green, .red, .purple, .pink{
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.253);
+  padding: 10px ;
+  border-radius: 4px;
+}
+
+.ninth{
+  column-gap: 40px
+}
+.ninth div:not(.section-header){
+  padding :15px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  height: 100%;
+}
+.ninth div:not(.section-header) button{
+  display:inline;
+  background-color: white;
+  color:var(--button-background);
+  border-radius: 50px;
+  border: 2px solid var(--button-background);
+  box-shadow: none;
+  width: 120px;
+  margin: 10px;
+}
+ul{
+  list-style: none;
+}
+.ninth div:not(.section-header) h1{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.free h1{
+  color: var(--cyanish);
+}
+.starter h1{
+  color: var(--light-green);
+}
+.business h1{
+  color: var(--light-orange);
+}
+.ultimate h1{
+  color: var(--pink);
+}
+s li{
+  opacity: 0.5;
+}
+
+
+
+.tenth p{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+  width: 100%;
+  padding: 1em;
+}
+
+.eleventh div{
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+.eleventh img{
+  margin-bottom: 10px;
+}
+.eleventh{
+  column-gap: 40px;
+}
+.eleventh .name{
+  color: var(--text);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.eleventh .job-position{
+  font-weight:lighter;
+  font-size: 0.9rem;
+}
+.eleventh .description{
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight:lighter;
+}
+/*div:not(.section-header)*/
+.twelfth {
+  column-gap: 40px;
+}
+
+.twelfth div:not(.section-header){
+  text-align: left;
+  height:100%;
+}
+.twelfth .date{
+ font-size: 1rem;
+ font-weight: lighter;
+}
+.twelfth .title{
+  color:var(--text);
+  text-transform: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.twelfth a{
+  color:var(--button-background);
+  margin: 30px 15px 10px 0px;
+}
+
+.thirteenth .info{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 100%;
+}
+.thirteenth div:not(.section-header){
+  height:100%;
+  width: 100%;
+}
+.thirteenth form{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 100%;
+  gap: 20px;
+}
+.thirteenth form .subject, .thirteenth form textarea{
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+ padding: 40px;
+ margin-top: 20px;
+  align-items: center;
+  background-color: rgb(244, 255, 255) ;
 }
