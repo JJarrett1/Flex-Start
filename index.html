@@ -5,22 +5,57 @@
   <link href="styles/index.css" rel="stylesheet" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta itemprop="name" content="Flex Start: Main Page" />
+    <meta
+      name="description"
+      content="Hire a flex start web developer for all your company's website needs"
+    />
+    <meta
+      itemprop="description"
+      content="Hire a flex start web developer for all your company's website needs"
+    />
+    <meta itemprop="image" content="img/features-2.png" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.authentic-kitchen.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Flex Start: Main Page" />
+    <meta
+      property="og:description"
+      content="Hire a flex start web developer for all your company's website needs"
+    />
+    <meta
+      property="og:image"
+      content="img/features-2.png"
+    />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flex Start: Main Page" />
+    <meta
+      name="twitter:description"
+      content="Hire a flex start web developer for all your company's website needs"
+    />
+    <meta
+      name="twitter:image"
+      content="img/features-2.png"
+    />
   <title>Flex Start</title>
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
   <header id="home">
     <nav>
+      <button class="menu-icon" onclick = "showNav()"><img src="img/nav-icon.png"></button>
       <div class="logo"><img src="img/logo.png" /> Flex Start</div>
       <div class="nav-links">
-        <a href="#home">Home</a>
+        <a href="#home">Home </a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Portfolio</a>
         <a href="#">Team</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
-        <button>Get Started</button>
+        <a><button>Get Started</button></a>
       </div>
     </nav>
     <div class="content">
@@ -59,7 +94,7 @@
     <div>
       <img src="img/values-1.png" />
       <h2>Lid venenatis a condimentum vitae sapien</h2>
-      <p>
+      <p class="extra">
         Egestas sed sed risus pretium quam vulputate dignissim suspendisse in
         est ante in nibh mauris.
       </p>
@@ -67,7 +102,7 @@
     <div>
       <img src="img/values-2.png" />
       <h2>Turpis egestas sed tempus urna et</h2>
-      <p>
+      <p class="extra">
         Condimentum mattis pellentesque id nibh tortor id aliquet lectus proin
         nibh nisl condimentum id venenatis!
       </p>
@@ -75,7 +110,7 @@
     <div>
       <img src="img/values-3.png" />
       <h2>Scipit adipiscing bibendum est ultricies integer</h2>
-      <p>
+      <p class="extra">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
         minus quam quidem!
       </p>
@@ -149,38 +184,38 @@
     </div>
     <div class="cyan">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span> 
       </p><a>Read more </a>
     </div>
     <div class="orange">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span>
       </p><a>Read more </a>
     </div>
     <div class="green">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span> 
       </p><a>Read more </a>
     </div>
     <div class="red">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span>
       </p><a>Read more </a>
     </div>
     <div class="purple">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span>
       </p><a>Read more </a>
     </div>
     <div class="pink">
       <h2>Lorem</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quisquam sit iure cum officia expedita
-        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class=" extra">Consequatur quisquam sit iure cum officia expedita
+        quae ipsam laboriosam autem repellat atque unde, omnis quam maiores natus! Unde officia temporibus voluptatibus.</span>
       </p><a>Read more </a>
     </div>
   </section>
@@ -280,7 +315,7 @@
     <div><img src="img/team/team-1.jpg" />
       <h1 class="name">Walter White</h1>
       <h2 class="job-position">Chief Executive Officer</h2>
-      <p class="description">
+      <p class="description extra">
         Pariatur, distinctio eveniet hic, aspernatur architecto minima
         totam sit cum cupiditate tempora recusandae vel aliquam qui iusto magni corporis quo quas! Iusto est eaque quae
         repellat
@@ -290,7 +325,7 @@
     <div><img src="img/team/team-2.jpg" />
       <h1 class="name">Sarah Jhonson</h1>
       <h2 class="job-position">Product Manager</h2>
-      <p class="description">
+      <p class="description extra">
         Aspernatur voluptate laudantium sint ut, impedit nisi porro? Vero explicabo vitae eaque adipisci modi dolores
         molestiae
         harum, atque, quia libero consectetur ipsam rerum corrupti neque alias nisi. Accusantium quasi tempore eligendi
@@ -301,7 +336,7 @@
     <div><img src="img/team/team-3.jpg" />
       <h1 class="name">William Anderson</h1>
       <h2 class="job-position">CTO</h2>
-      <p class="description">Dolore ex! Modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam assumenda
+      <p class="description extra">Dolore ex! Modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam assumenda
         asperiores mollitia distinctio,
         dolorum exercitationem laboriosam doloribus architecto sapiente magni hic optio quos. Magnam vel eius soluta
         voluptas,
@@ -310,7 +345,7 @@
     <div><img src="img/team/team-4.jpg" />
       <h1 class="name">Amanda Jepson</h1>
       <h2 class="job-position">Accountant</h2>
-      <p class="description">
+      <p class="description extra">
         Vero eaque perferendis, vitae at similique
         laborum, magnam unde modi adipisci delectus quisquam provident maiores nesciunt? Quaerat quidem soluta sunt,
         illum
@@ -342,10 +377,10 @@
     </div>
     <div>
       <img src="img/blog/blog-1.jpg" />
-      <h2 class="date">Tue, September 15</h2>
+      <h2 class="date">Tue, Sept. 15</h2>
       <h1 class="title">
-        Rem ducimus nostrum illum, non consectetur sapiente dolores illo,
-        repellendus adipisci eum libero?
+        Rem ducimus nostrum illum, non consectetur sapiente <span class=" extra">dolores illo,
+        repellendus adipisci eum libero?</span>
       </h1>
       <a>Read More</a>
     </div>
@@ -353,8 +388,8 @@
       <img src="img/blog/blog-2.jpg" />
       <h2 class="date">Fri, August 28</h2>
       <h1 class="title">
-        Id numquam, eaque obcaecati necessitatibus nisi vel explicabo maxime
-        maiores sunt vitae officia dolor assumenda quas et.
+        Id numquam, eaque obcaecati necessitatibus nisi vel <span class=" extra">explicabo maxime
+        maiores sunt vitae officia dolor assumenda quas et.</span>
       </h1>
       <a>Read More</a>
     </div>
@@ -362,7 +397,7 @@
       <h2 class="date">Mon, July 11</h2>
       <h1 class="title">
         Laborum
-        numquam consequuntur odio a! Illo ducimus veniam ab temporibus doloribus sint ipsa consequatur?
+        numquam consequuntur odio a! Illo  <span class=" extra">ducimus ab temporibus doloribus sint ipsa consequatur?</span>
       </h1>
       <a>Read More</a>
     </div>
@@ -399,3 +434,17 @@
 </body>
 
 </html>
+<lorem style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta modi repellat
+  iure fugiat numquam facere omnis reprehenderit ipsam nam. Eaque nostrum facere, molestiae reiciendis voluptatum illum
+  exercitationem nisi delectus a similique expedita ut, sunt unde molestias quibusdam totam consectetur. Incidunt
+  adipisci quod similique ut, reiciendis exercitationem sint, delectus magni dolor labore vitae, tempora ipsam. Eaque
+  sint illo ducimus, culpa similique asperiores in eligendi id architecto inventore velit hic earum odit laboriosam
+  fugiat blanditiis ut soluta ratione repellendus. Debitis suscipit voluptatum dignissimos accusamus esse, earum nam
+  illum nisi voluptatem fuga qui mollitia assumenda explicabo accusantium. Obcaecati, placeat. Cumque, numquam quo! Sunt
+  cum adipisci odio ducimus perspiciatis nisi reprehenderit ratione nobis sit illum, consequatur veniam, magnam, minima
+  impedit molestias vel delectus molestiae quo. Amet omnis possimus ab ipsum consectetur blanditiis expedita nihil
+  fugiat assumenda quae sint dignissimos enim quos quas placeat officiis fugit, error animi numquam maxime
+  exercitationem totam reprehenderit rerum? Repudiandae dolor expedita suscipit rem, iste voluptatem perspiciatis dicta
+  eum? Consectetur velit nihil suscipit impedit, nesciunt expedita dolorum vero saepe? Aliquam ducimus ratione harum
+  porro ex provident odit facere odio consectetur, vero consequatur nesciunt quidem laudantium at incidunt, earum magni
+  quam voluptatem dolores voluptas atque, magnam molestiae. Molestias, amet iusto.</lorem>

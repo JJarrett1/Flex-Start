@@ -1,11 +1,21 @@
 @import url("colors.css");
-
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   color: var(--text);
-  
+  font-family: Nunito;
+}
+p{
+  font-family: OpenSans;
 }
 button {
   background-color: var(--button-background);
@@ -92,6 +102,7 @@ section h2{
 }
 section.first{
   grid-template-rows: 450px;
+  padding-bottom: 20px;
 }
 
 a {
@@ -104,7 +115,7 @@ a:hover{
 }
 
 header, section{
-  padding: 0px 50px 0px 50px;
+  padding: 0px 50px 10px 50px;
 }
 img {
   max-height: 100%;
@@ -256,11 +267,16 @@ s li{
 }
 
 
-
+.tenth div{
+  width: 100%;
+}
 .tenth p{
   border-bottom: 1px solid rgba(0, 0, 0, 0.336);
   width: 100%;
   padding: 1em;
+}
+.tenth div:not(.section-header){
+  height: 100%;
 }
 
 .eleventh div{
@@ -280,14 +296,12 @@ s li{
   font-size: 1.2rem;
   font-weight: bold;
 }
-.eleventh .job-position{
+.eleventh .job-position, .eleventh .description{
   font-weight:lighter;
   font-size: 0.9rem;
 }
 .eleventh .description{
-  font-size: 0.9rem;
   font-style: italic;
-  font-weight:lighter;
 }
 /*div:not(.section-header)*/
 .twelfth {
@@ -297,6 +311,7 @@ s li{
 .twelfth div:not(.section-header){
   text-align: left;
   height:100%;
+  border-radius: 10px;
 }
 .twelfth .date{
  font-size: 1rem;
@@ -325,16 +340,15 @@ s li{
 }
 .thirteenth form{
   display: grid;
-  grid-template-columns: 1fr 1fr; 
   width: 100%;
+  grid-template-columns: 1fr 1fr; 
   gap: 20px;
 }
 .thirteenth form .subject, .thirteenth form textarea{
   grid-column-start: 1;
-  grid-column-end: end;
+  grid-column-end: 3;
 }
 .newsletter{
-  
  padding: 40px;
  margin-top: 20px;
 text-align: center;
@@ -347,4 +361,110 @@ text-align: center;
 }
 .newsletter input{
   height: 30px;
+}
+.menu-icon{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .extra{
+    display: none;
+  }
+  nav{
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links{
+    display: none;
+    order: 1;
+  }
+  .nav-links a{
+    padding: 20px 0px 20px 10px;
+    background-color: var(--text);
+    color: white;
+    border-bottom: 1px solid var(--cyanish);
+    
+  }
+  button.menu-icon {
+    display: block;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    justify-self: flex-start;
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+  }
+  .menu-icon img{
+   
+    width: 100%;
+    margin: 0px;
+  }
+  .logo{
+    justify-content: flex-start;
+    align-items: center;
+    /*order: 2;*/
+  }
+  .third{
+    display: none;
+  }
+  .second{
+    column-gap: 10px;;
+  }
+  .ninth{
+    grid-template-columns: 1fr 1fr [stop end];
+    gap: 15px;
+  }
+  .eleventh{
+    column-gap: 5px;
+  }
+  
+  .clients div:not(.section-header){
+    column-gap: 20px;
+  }
+  header{
+    padding-left: 0px;
+  }
+  header div{
+    padding-left: 25px;
+  }
+  .content{
+    padding-top: 90px;
+  }
+  
+}
+@media only screen and (max-width: 500px){
+  .content, section{
+    grid-template-columns: 1fr [stop end];
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px ;
+  }
+  .three{
+    grid-template-columns: 1fr  [stop end];
+    grid-template-rows: 250px;
+    row-gap: 20px;
+  }
+  .three div{
+    overflow: hidden;
+  }
+  .twelfth{
+    column-gap: 5px;
+  }
+  .two{
+   /* grid-template-columns: 1fr;*/
+  }
+  .fifth img{
+    display: none;
+  }
+  section{
+    margin-top: 25px;
+  }
 }
