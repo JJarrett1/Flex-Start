@@ -334,10 +334,17 @@ s li{
   grid-column-end: end;
 }
 .newsletter{
-  display: flex;
-  flex-direction: column;
+  
  padding: 40px;
  margin-top: 20px;
-  align-items: center;
+text-align: center;
   background-color: rgb(244, 255, 255) ;
+}
+
+.newsletter button{
+  display: inline;
+  height: 35px;
+}
+.newsletter input{
+  height: 30px;
 }
