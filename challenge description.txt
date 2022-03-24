@@ -2,11 +2,11 @@
 
 2. Ensure that the website is mobile-friendlyx
 
-3. Use meta tags to improve SEO 
+3. Use meta tags to improve SEOx
 
 4. Additional features that you see fit can be addedx
 
-5. Use of Javascript for any reason is appreciated x
+5. Use of Javascript for any reason is appreciatedx
 
 6. Host website on Netlify (https://www.netlify.com/)
 
