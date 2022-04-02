@@ -518,6 +518,7 @@ text-align: center;
 }
 .newsletter input{
   height: 30px;
+  width: 30vw;
 }
 .menu-icon{
   display: none;
@@ -526,7 +527,45 @@ text-align: center;
 
 footer{
   background-image: url(../img/footer-bg.png);
+  height:250px;
+  padding-top :40px;
+  padding-bottom: 20px;
+  margin-bottom:20px;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 0.25fr;
+  column-gap: 1.5rem;
 }
+footer h1{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+footer p{
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer ul li{
+  margin: 0;
+	padding: 5px 0 5px 10px;
+  
+	list-style: none;
+	background-image: url("../img/next.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 10px;
+}
+footer ul {
+  
+  padding: 0;
+ 
+}
+
+
+
+
 
 
 
@@ -652,6 +691,27 @@ gap:10px;
   }
   section{
     margin: 100px 0px 40px 0px;
+  }
+  .newsletter input{
+    
+    width: 45vw;
+  }
+  footer{
+    
+   height: fit-content; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px ;
+  } 
+  footer>:first-child{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  footer h1{
+    font-size: 0.9rem;
+    
   }
   
 }
