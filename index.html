@@ -26,17 +26,17 @@
 
 <body>
   <header id="home">
-    <nav>
+    <nav onclick="hideNav()">
       <button class="menu-icon" onclick="showNav()"><img src="img/menu.png"></button>
       <div class="logo"><img src="img/logo.png" /> Flex Start</div>
       <div class="nav-links">
         <a href="#home">Home </a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Team</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
         <a><button>Get Started</button></a>
       </div>
     </nav>
@@ -51,7 +51,7 @@
       </div>
     </div>
   </header>
-  <section class="first">
+  <section class="first" id="about">
     <div class="text">
       <h1>Who we are</h1>
       <h2>
@@ -198,7 +198,7 @@
     </div>
   </section>
   <!-- services-->
-  <section class="three eighth">
+  <section class="three eighth" id="services">
     <div class="section-header">
       <h1>Services</h1>
       <h2>Orci porta non pulvinar neque laoreet suspendisse</h2>
@@ -346,7 +346,7 @@
 
 
   <!-- team -->
-  <section class="eleventh four">
+  <section class="eleventh four" id="team">
     <div class="section-header">
       <h1>Team</h1>
       <h2>Our hard working team</h2>
@@ -373,6 +373,7 @@
         totam,</p>
     </div>
     <div><img src="img/team/team-3.jpg" />
+    <div id = 'curved'>
       <h1 class="name">William Anderson</h1>
       <h2 class="job-position">CTO</h2>
       <p class="description extra">Dolore ex! Modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -380,9 +381,10 @@
         asperiores mollitia distinctio,
         dolorum exercitationem laboriosam doloribus architecto sapiente magni hic optio quos. Magnam vel eius soluta
         voluptas,
-        recusandae temporibus asperiores qui aperiam. </p>
+        recusandae temporibus asperiores qui aperiam. </p></div>
     </div>
     <div><img src="img/team/team-4.jpg" />
+      
       <h1 class="name">Amanda Jepson</h1>
       <h2 class="job-position">Accountant</h2>
       <p class="description extra">
@@ -410,7 +412,7 @@
     </div>
   </section>
   <!-- blog -->
-  <section class="twelfth three">
+  <section class="twelfth three" id="blog">
     <div class="section-header">
       <h1>Blog</h1>
       <h2>Recent posts from our Blog</h2>
@@ -444,16 +446,36 @@
     </div>
   </section>
   <!-- contact -->
-  <section class="two thirteenth">
+  <section class="two thirteenth" id="contact">
     <div class="section-header">
       <h1>Contact</h1>
       <h2>Contact us</h2>
     </div>
     <div class="info">
-      <div>Address</div>
-      <div>Call Us</div>
-      <div>Email Us</div>
-      <div>Open Hours</div>
+      <div><img src="img/location.png">
+        <h1>Address</h1>
+        <p>A108 Adam Street<br>
+          New York, NY 535022
+        </p>
+      </div>
+      <div><img src="img/location.png">
+        <h1>Call Us todo</h1>
+        <p>+1 5589 55488 55<br>
+          +1 6678 254445 41
+        </p>
+      </div>
+      <div><img src="img/envelope.png">
+        <h1>Email Us</h1>
+        <p>info@example.com<br>
+          contact@example.com
+        </p>
+      </div>
+      <div><img src="img/clock.png">
+        <h1>Open Hours</h1>
+        <p>Monday - Friday<br>
+          9:00AM - 05:00PM
+        </p>
+      </div>
     </div>
     <div>
       <form>
@@ -461,31 +483,19 @@
         <input type="email" placeholder="Your Email">
         <input class="subject" placeholder="Subject">
         <textarea placeholder="Message"></textarea>
-        <button>Send Message</button>
+        <div><button>Send Message</button></div>
       </form>
     </div>
   </section>
 
   <div class="newsletter">
     <h1>Our Newsletter</h1>
-    <h2>Illum, cumque repudiandae </h2>
-    <form><input><button>Subscribe</button></form>
+    <h2>Illum, cumque repudiandae rerum tempora modi dolorum velit eius, sequi veritatis </h2>
+    <form><input type="email"><button>Subscribe</button></form>
   </div>
-  <footer></footer>
+  <footer>
+    <div class="logo"><img src="img/logo.png" /> Flex Start</div>
+  </footer>
 </body>
 
 </html>
-<lorem style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta modi repellat
-  iure fugiat numquam facere omnis reprehenderit ipsam nam. Eaque nostrum facere, molestiae reiciendis voluptatum illum
-  exercitationem nisi delectus a similique expedita ut, sunt unde molestias quibusdam totam consectetur. Incidunt
-  adipisci quod similique ut, reiciendis exercitationem sint, delectus magni dolor labore vitae, tempora ipsam. Eaque
-  sint illo ducimus, culpa similique asperiores in eligendi id architecto inventore velit hic earum odit laboriosam
-  fugiat blanditiis ut soluta ratione repellendus. Debitis suscipit voluptatum dignissimos accusamus esse, earum nam
-  illum nisi voluptatem fuga qui mollitia assumenda explicabo accusantium. Obcaecati, placeat. Cumque, numquam quo! Sunt
-  cum adipisci odio ducimus perspiciatis nisi reprehenderit ratione nobis sit illum, consequatur veniam, magnam, minima
-  impedit molestias vel delectus molestiae quo. Amet omnis possimus ab ipsum consectetur blanditiis expedita nihil
-  fugiat assumenda quae sint dignissimos enim quos quas placeat officiis fugit, error animi numquam maxime
-  exercitationem totam reprehenderit rerum? Repudiandae dolor expedita suscipit rem, iste voluptatem perspiciatis dicta
-  eum? Consectetur velit nihil suscipit impedit, nesciunt expedita dolorum vero saepe? Aliquam ducimus ratione harum
-  porro ex provident odit facere odio consectetur, vero consequatur nesciunt quidem laudantium at incidunt, earum magni
-  quam voluptatem dolores voluptas atque, magnam molestiae. Molestias, amet iusto.</lorem>

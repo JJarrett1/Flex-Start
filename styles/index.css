@@ -102,7 +102,7 @@ section h2{
   font-weight: bold;
 }
 section.first{
-  grid-template-rows: 450px;
+  grid-template-rows: 500px;
   padding-bottom: 20px;
 }
 
@@ -115,7 +115,7 @@ a:hover{
   background-color: (--cyanish);
 }
 
-header, section{
+header, section, footer{
   padding: 0px 50px 10px 50px;
 }
 img {
@@ -148,18 +148,23 @@ a:not(nav a) {
 section{
   margin-top: 100px;
 }
+.third{
+  column-gap: 10px;
+}
 .third img{
-  height: 65px;
-  padding-right: 10px ;
+  height: 40px;
+  padding-right: 10px;
 }
 .third b{
-  font-size: 2.5em;
+  font-size: 2rem;
 }
 .third > div{
   display: flex;
   text-align: left;
-  padding: 10px 50px 10px 50px;
+  padding: 10px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.082);
+  height: 100%;
+  width:100%;
 }
 .featuresgrid{
   display:grid;
@@ -306,16 +311,20 @@ list-style-image: url(../img/chart.png);
   background-blend-mode: lighten;
 }
 .cyan:hover, .orange:hover, .green:hover, .red:hover, .purple:hover, .pink:hover{
-  border-bottom-width: 4px;
+  border-bottom-width: 6px;
 }
 
 .ninth{
-  column-gap: 40px
+  width: 100%;
+  column-gap: 1rem;
+ 
 }
 .ninth div:not(.section-header){
   padding :15px;
-  border: 1px solid rgba(0, 0, 0, 0.089);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   height: 100%;
+  width: 100%;
+  margin: 0px;
 }
 .ninth div:not(.section-header) button{
   display:inline;
@@ -332,7 +341,7 @@ list-style-image: url(../img/chart.png);
 }
 .ninth div:not(.section-header) h1{
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .free h1{
   color: var(--cyanish);
@@ -365,9 +374,10 @@ s li{
 
 .eleventh div{
   height: 100%;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 50px;
+ 
 }
+
 .eleventh img{
   margin-bottom: 10px;
 }
@@ -387,6 +397,26 @@ s li{
 .eleventh .description{
   font-style: italic;
 }
+.custom-shape-divider-bottom-1648164673 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648164673 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1648164673 .shape-fill {
+  fill: #FFFFFF;
+}
 /*div:not(.section-header)*/
 .twelfth {
   column-gap: 40px;
@@ -395,6 +425,7 @@ s li{
 .twelfth div:not(.section-header){
   text-align: left;
   height:100%;
+  width: 100%;
   border-radius: 10px;
 }
 .twelfth .date{
@@ -412,11 +443,30 @@ s li{
   color:var(--button-background);
   margin: 30px 15px 10px 0px;
 }
-
+.thirteenth{
+  column-gap: 30px;
+}
 .thirteenth .info{
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  width: 100%;
+  
+  gap: 10px;
+}
+.info>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(244, 255, 255, 0.5);
+  padding: 15px;
+}
+.info>div img{
+  width: 30px;
+}
+.info h1{
+  font-size: 1.2rem;
+  color: var(--text);
+  text-transform: capitalize;
+  font-weight: bold;
 }
 .thirteenth div:not(.section-header){
   height:100%;
@@ -427,7 +477,23 @@ s li{
   width: 100%;
   grid-template-columns: 1fr 1fr; 
   gap: 20px;
+  background-color: rgba(244, 255, 255, 0.5);
+  padding: 40px;
 }
+.thirteenth input{
+  height: 35px;
+  padding: 5px;
+}
+.thirteenth form div{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+.thirteenth textarea{
+  height: 120px;
+}
+
 .thirteenth form .subject, .thirteenth form textarea{
   grid-column-start: 1;
   grid-column-end: 3;
@@ -450,7 +516,16 @@ text-align: center;
   display: none;
 }
 
+
+footer{
+  background-image: url(../img/footer-bg.png);
+}
+
+
+
+
 @media only screen and (max-width: 768px){
+  
   .extra{
     display: none;
   }
@@ -481,11 +556,12 @@ text-align: center;
     display: block;
     padding: 0px;
     background-color: rgba(0, 0, 0, 0);
-    justify-self: flex-start;
+    align-self: flex-start;
     height: 40px;
     width: 40px;
     margin: 0px;
   }
+  
   .menu-icon img{
     width: 100%;
     margin: 0px;
@@ -532,8 +608,11 @@ gap:10px;
   .four{
     grid-template-columns: 1fr 1fr [stop end];
   }
-}
-@media only screen and (max-width: 500px){
+  .thirteenth form{
+    padding: 10px;
+  }
+/*}
+@media only screen and (max-width: 500px){*/
   .content, section{
     grid-template-columns: 1fr [stop end];
     padding-left: 10px;
@@ -554,7 +633,7 @@ gap:10px;
     display: none;
   }
   section{
-    margin: 40px 0px 40px 0px;
+    margin: 100px 0px 40px 0px;
   }
 }
 @media only screen and (max-width: 375px){
