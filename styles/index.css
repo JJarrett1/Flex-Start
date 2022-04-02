@@ -317,7 +317,7 @@ list-style-image: url(../img/chart.png);
 .ninth{
   width: 100%;
   column-gap: 1rem;
- 
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 }
 .ninth div:not(.section-header){
   padding :15px;
@@ -445,10 +445,11 @@ s li{
 }
 .thirteenth{
   column-gap: 30px;
+  grid-template-columns:  minmax(0,1fr) minmax(0,1fr) [stop end]; 
 }
 .thirteenth .info{
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns:  minmax(0,1fr) minmax(0,1fr); 
   
   gap: 10px;
 }
@@ -458,6 +459,7 @@ s li{
   align-items: flex-start;
   background-color: rgba(244, 255, 255, 0.5);
   padding: 15px;
+  
 }
 .info>div img{
   width: 30px;
@@ -468,9 +470,13 @@ s li{
   text-transform: capitalize;
   font-weight: bold;
 }
+.info p{
+  font-size: 0.9rem;
+}
 .thirteenth div:not(.section-header){
   height:100%;
   width: 100%;
+  
 }
 .thirteenth form{
   display: grid;
@@ -482,6 +488,7 @@ s li{
 }
 .thirteenth input{
   height: 35px;
+  width: 100%;
   padding: 5px;
 }
 .thirteenth form div{
@@ -583,9 +590,11 @@ footer{
   .listed ul{
 margin-left: 20px;
   }
-  .seventh img{
-    width: 70%;
+ .seventh img, .sixth img{
+    width: 60%;
+    margin: 10px;
   }
+  
   .ninth{
 gap:10px;
   }
@@ -606,7 +615,7 @@ gap:10px;
     padding-top: 90px;
   }
   .four{
-    grid-template-columns: 1fr 1fr [stop end];
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) [stop end];
   }
   .thirteenth form{
     padding: 10px;
@@ -627,14 +636,24 @@ gap:10px;
 
   .twelfth{
     column-gap: 5px;
+    
   }
- 
+  .twelfth div:not(.section-header){
+    padding: 0px 20px 0px 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.253);
+  }
+  .thirteenth{
+    row-gap: 30px;
+    grid-template-columns:  minmax(0,1fr) [stop end]; 
+    
+  }
   .fifth img{
     display: none;
   }
   section{
     margin: 100px 0px 40px 0px;
   }
+  
 }
 @media only screen and (max-width: 375px){
   .four{
