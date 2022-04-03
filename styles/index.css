@@ -71,7 +71,7 @@ header {
   background-image: url("../img/hero-bg.png");
 }
 header h1 {
-  font-size: rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 .text{
@@ -123,7 +123,7 @@ img {
   max-width: 100%;
 }
 button img, a img{
-  width: 1em;
+  width: 1rem;
   margin: 2px;
 }
 a:not(nav a) {
@@ -338,6 +338,23 @@ list-style-image: url(../img/chart.png);
   box-shadow: none;
   width: 120px;
   margin: 10px;
+}
+
+
+.ninth h3 span {
+  font-weight: lighter;
+  opacity: 0.5;
+  font-size: 1.1rem;
+  color: var(--text-2);
+}
+.ninth h3 b, .ninth h3 sup{
+  font-weight: bold;
+  opacity: 1;
+  font-size: 2rem;
+  color: var(--text-2);
+}
+.ninth h3 sup{
+  font-size: 1.1rem;
 }
 .ninth ul{
   list-style: none;
