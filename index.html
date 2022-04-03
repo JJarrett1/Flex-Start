@@ -26,10 +26,16 @@
 
 <body>
   <header id="home">
-    <nav onclick="hideNav()">
-      <button class="menu-icon" onclick="showNav()"><img src="img/menu.png"></button>
+    <nav >
+      <div class="menu">
+        <label for="check">
+        <input type="checkbox" id="check" onclick="showNav()"/> 
+        <span></span>
+        <span></span>
+        <span></span>
+      </label></div>
       <div class="logo"><img src="img/logo.png" /> Flex Start</div>
-      <div class="nav-links">
+      <div class="nav-links" onclick="hideNav()">
         <a href="#home">Home </a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -98,7 +104,7 @@
       </p>
     </div>
   </section>
-  <section class="four third">
+  <section class="four third" >
     <div>
       <img src="img/smiley-face.png" />
       <div>
@@ -398,7 +404,7 @@
     </div>
   </section>
   <!-- clients -->
-  <section class="clients">
+  <section class="clients" id="portfolio">
     <div class="section-header">
       <h1>Our Clients</h1>
       <h2>Suspendisse sed nisi</h2>
@@ -505,11 +511,11 @@
       <h1>Useful Links</h1>
       <p>
         <ul>
-          <a><li>Home</li></a>
-          <a><li>About us</li></a>
-          <a><li>Services</li></a>
-          <a><li>Terms of service</li></a>
-          <a><li>Privacy Policy</li></a>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About us</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>Terms of service</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
         </ul>
       </p>
     </div>
@@ -517,11 +523,11 @@
       <h1>Our Services</h1>
       <p>
         <ul>
-          <a><li>Web Design</li></a>
-          <a><li>Web Development</li></a>
-          <a><li>Product Management</li></a>
-          <a><li>Marketing</li></a>
-          <a><li>Graphic Design</li></a>
+          <a href="#"><li>Web Design</li></a>
+          <a href="#"><li>Web Development</li></a>
+          <a href="#"><li>Product Management</li></a>
+          <a href="#"><li>Marketing</li></a>
+          <a href="#"><li>Graphic Design</li></a>
         </ul>
       </p>
     </div>
@@ -534,6 +540,7 @@
         <b>Email:</b> info@example.com
       </p>
     </div>
+    <div id="top"><button><a href="#home"><img src="img/up-arrow.png"></a></button></div>
   </footer>
 </body>
 
