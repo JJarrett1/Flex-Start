@@ -729,6 +729,10 @@ gap:10px;
   .four{
     grid-template-columns: 1fr  [stop end];
   }
+  footer{
+    display: block;
+  }
+
 }
 .menu{
 align-self: flex-start;
