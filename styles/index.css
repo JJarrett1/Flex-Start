@@ -388,7 +388,7 @@ s li{
   width: 100%;
   padding: 1em;
 }
-.tenth div:not(.section-header){
+.tenth div.container{
   height: 100%;
 }
 
@@ -640,6 +640,9 @@ margin-left: 20px;
     width: 60%;
     margin: 10px;
   }
+  .listed ul{
+    grid-template-columns: 1fr;
+  }
   
   .ninth{
 gap:10px;
@@ -816,3 +819,32 @@ label{
    height: 30px;
    justify-content: center;
  }
+  /*accordion */
+ .accordion{
+  color: var(--text-2);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-radius: 0px;
+  background-color: white;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: none; 
+  font-size: 0.9rem;
+  border-bottom: 1px solid #ccc;
+ }
+ 
+
+.active, .accordion:hover {
+  background-color: #ccc;
+} 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color:var(--text-2);
+}
