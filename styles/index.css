@@ -834,6 +834,8 @@ label{
   box-shadow: none; 
   font-size: 0.9rem;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
  }
  
 

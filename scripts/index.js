@@ -3,6 +3,7 @@ let nav = document.getElementsByTagName("nav")[0];
 
 let checkbox = document.getElementById("check");
 let acc = document.getElementsByClassName("accordion");
+
 function showNav() {
   if (checkbox.checked == true) {
     links.style.display = "flex";
@@ -34,6 +35,12 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    
+    if(this.classList.contains("active")){
+        this.querySelector("img").src= "img/acc-up-arrow.png";
+    }else{
+        this.querySelector("img").src = "img/acc-down-arrow.png";
     }
   });
 }
